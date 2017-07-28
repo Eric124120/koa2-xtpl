@@ -1,0 +1,18 @@
+header {
+    background-color: #999113;
+    color: #ffffff;
+    padding: 20px;
+}
+
+footer {
+    background-color: #00334d;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    color: #ffffff;
+    width: 100%;
+}
+
+p {
+    line-height: 24px;
+}

@@ -9,7 +9,7 @@ const xtpl = require('./utils/koa2-xtpl');
 
 const logUtil = require('./utils/log_utils');
 
-const index = require('./routes/index');
+const page_routes = require('./routes/pages/index');
 
 const api_routes = require('./routes/api/index');
 
@@ -61,7 +61,7 @@ app.use(async (ctx, next) => {
 });
 
 // pages routes
-app.use(index.routes(), index.allowedMethods());
+app.use(page_routes.routes(), page_routes.allowedMethods());
 
 // api routes
 app.use(api_routes.routes(), api_routes.allowedMethods());
